@@ -16,3 +16,8 @@ of the query, everything is streamed and batched, no intermediate result materia
 happens. 
 
 
+# Example How to schedule this Program as a Job in Cloud Pak for Data
+
+![Job Runs](res/job_runs.png?raw=true "Job Runs")
+
+![Job Settings](res/job_settings.png?raw=true "Job Settings")
