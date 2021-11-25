@@ -16,13 +16,13 @@ of the query, everything is streamed and batched, no intermediate result materia
 happens. 
 
 
-# Example How to schedule this Program as a Job in Cloud Pak for Data
+# Example How to Schedule this Program as a Job in Cloud Pak for Data
 
 ![Job Runs](res/job_runs.png?raw=true "Job Runs")
 
 ![Job Settings](res/job_settings.png?raw=true "Job Settings")
 
 
-# For other schedulers please refer to their documentation
-
-Linux cron: https://opensource.com/article/17/11/how-use-cron-linux
+Note: there are plenty of other schedulers available on Linux, MacOS and Windows. Please
+refer to their documentation. For Linux, a popular choice is cron: 
+https://opensource.com/article/17/11/how-use-cron-linux
