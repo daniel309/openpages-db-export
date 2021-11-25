@@ -16,6 +16,12 @@ of the query, everything is streamed and batched, no intermediate result materia
 happens. 
 
 
+# Scheduling This Program to Run Regularly
+There are plenty of job schedulers available on Linux, MacOS and Windows. Please
+refer to their documentation. For Linux, a popular choice is cron: 
+https://opensource.com/article/17/11/how-use-cron-linux
+
+
 # Example How to Schedule this Program as a Job in Cloud Pak for Data
 
 ![Job Runs](res/job_runs.png?raw=true "Job Runs")
@@ -23,6 +29,4 @@ happens.
 ![Job Settings](res/job_settings.png?raw=true "Job Settings")
 
 
-Note: there are plenty of other schedulers available on Linux, MacOS and Windows. Please
-refer to their documentation. For Linux, a popular choice is cron: 
-https://opensource.com/article/17/11/how-use-cron-linux
+
