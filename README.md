@@ -1,2 +1,18 @@
 # openpages-db-export
-Python program that uses the OpenPages GRC REST API to 1. run a query against any GRC object, 2. extracts table DDL 3. creates a target table and 4. loads the result into the target table. 
+
+Python program that, given an OpenPages pseudo SQL query, creates a table in Db2 based on 
+the schema of the result and loads the query result into this table. 
+
+Designed to run periodically as job (CP4D scheduled job, cron, ...). Loads the query result into a 
+shadow table so that the previous import iteration is still available for querying 
+while the update job is running. 
+
+Parameters are environment variables (TABLE, QUERY), configuration is in the .py itself. 
+The idea is to create one job instance per query so that the export can run in parallel 
+per table/query combination. 
+
+Throughput I measured is about 10k rows per 30s. There should be no limit on result size 
+of the query, everything is streamed and batched, no intermediate result materialisation
+happens. 
+
+
