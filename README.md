@@ -1,4 +1,4 @@
-# openpages-db-export
+# IBM OpenPages Query to Database Table Export Tool
 
 Python program that, given an OpenPages pseudo SQL query, creates a table in Db2 based on 
 the schema of the result and loads the query result into this table. 
@@ -21,3 +21,8 @@ happens.
 ![Job Runs](res/job_runs.png?raw=true "Job Runs")
 
 ![Job Settings](res/job_settings.png?raw=true "Job Settings")
+
+
+# For other schedulers please refer to their documentation
+
+Linux cron: https://opensource.com/article/17/11/how-use-cron-linux
