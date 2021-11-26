@@ -5,15 +5,14 @@ the schema of the result and loads the query result into this table.
 
 Designed to run periodically as job (CP4D scheduled job, cron, ...). Loads the query result into a 
 shadow table so that the previous import iteration is still available for querying 
-while the update job is running. 
+while the update job is running. Also uses Db2 bulk insert API for best throughput. 
 
-Parameters are environment variables (TABLE, QUERY), configuration is in the .py itself. 
+Parameters are environment variables (TABLE, QUERY), the configuration is in the .py itself. 
 The idea is to create one job instance per query so that the export can run in parallel 
-per table/query combination. 
+per table/query combination if needed. 
 
-Throughput I measured is about 10k rows per 30s. There should be no limit on result size 
-of the query, everything is streamed and batched, no intermediate result materialisation
-happens. 
+Throughput I measured is about 10k rows per 30s. There should be no limit on result size, 
+everything is streamed and batched, no intermediate result materialisation happens. 
 
 
 # Useful Links and Background Information
