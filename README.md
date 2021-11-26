@@ -1,6 +1,6 @@
 # IBM OpenPages Query to Database Table Export Tool
 
-Python program that, given an OpenPages pseudo SQL query, creates a table in Db2 based on 
+A Python program that, given an OpenPages pseudo SQL query, creates a table in Db2 based on 
 the schema of the result and loads the query result into this table. 
 
 Designed to run periodically as job (CP4D scheduled job, cron, ...). Loads the query result into a 
@@ -24,7 +24,7 @@ is documented under https://www.ibm.com/docs/en/opw/8.2.0?topic=apis-openpages-r
 a PDF version can be downloaded from https://public.dhe.ibm.com/software/data/cognos/documentation/openpages/en/8.2.0/GRC_REST_API.pdf
 
 The OpenPages Query Syntax is documented in the OpenPages JavaDoc: 
-https://public.dhe.ibm.com/software/data/cognos/documentation/openpages/en/8.2.0.4/javadoc/index.htmlhttps://public.dhe.ibm.com/software/data/cognos/documentation/openpages/en/8.2.0.4/javadoc/index.html
+https://public.dhe.ibm.com/software/data/cognos/documentation/openpages/en/8.2.0.4/javadoc/com/ibm/openpages/api/query/package-summary.html
 
 
 # Scheduling This Program to Run Regularly
